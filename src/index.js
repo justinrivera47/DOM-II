@@ -26,3 +26,10 @@ const btn = document.querySelectorAll('.btn');
 
 //h1
 const h1 = document.querySelector('h1');
+
+//body keydown e
+const body = document.querySelector('body');
+document.addEventListener('keydown', logKey);
+function logKey(e) {
+  body.textContent += ` ${e.code}`;
+}
