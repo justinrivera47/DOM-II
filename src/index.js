@@ -2,7 +2,7 @@ import './less/index.less'
 
 // Your code goes here!
 
-//Nav links
+//Nav links mouseover
 const navLinks = document.querySelector('nav')
 
 navLinks.addEventListener("mouseover", function( event ) {
@@ -17,6 +17,22 @@ navLinks.addEventListener("mouseover", function( event ) {
 
 //Intro Image 
 const introImg = document.querySelector('.intro img')
+
+function zoom(event) {
+  event.preventDefault();
+  let scale = 1
+  scale += event.deltaY * -0.01;
+
+  // Restrict scale
+  scale = Math.min(Math.max(.125, scale), 4);
+
+  // Apply scale transform
+  event.target.style.transform = `scale(${scale})`;
+}
+
+introImg.addEventListener('wheel', zoom);
+
+
 
 //All H2
 const h2 = document.querySelectorAll('h2');
@@ -33,3 +49,8 @@ document.addEventListener('keydown', logKey);
 function logKey(e) {
   body.textContent += ` ${e.code}`;
 }
+
+//load event 
+window.addEventListener('load', (event => {
+  body.style.backgroundColor = 'white';
+}))
