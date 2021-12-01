@@ -54,3 +54,14 @@ function logKey(e) {
 window.addEventListener('load', (event => {
   body.style.backgroundColor = 'white';
 }))
+
+//resize
+window.addEventListener('resize', () => {
+  console.log('window resized');
+  alert('window resized');
+});
+
+//scroll 
+window.addEventListener('scroll', () => {
+  console.log('window scroll');
+});

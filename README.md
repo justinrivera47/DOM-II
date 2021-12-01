@@ -30,10 +30,10 @@ Do not **move or rename any files** in this project. The website's source files 
 * [ ] Here are some event types you could try to use:
   * [x] `mouseover`
   * [x] `keydown`
-  * [ ] `wheel`
-  * [ ] `load`
-  * [ ] `focus`
-  * [ ] `resize`
+  * [x] `wheel`
+  * [x] `load`
+  * [N/A] `focus`
+  * [x] `resize`
   * [ ] `scroll`
   * [ ] `select`
   * [ ] `dblclick`
