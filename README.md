@@ -34,7 +34,7 @@ Do not **move or rename any files** in this project. The website's source files 
   * [x] `load`
   * [N/A] `focus`
   * [x] `resize`
-  * [ ] `scroll`
+  * [x] `scroll`
   * [ ] `select`
   * [ ] `dblclick`
   * [ ] `drag / drop`

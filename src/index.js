@@ -35,10 +35,10 @@ introImg.addEventListener('wheel', zoom);
 
 
 //All H2
-const h2 = document.querySelectorAll('h2');
+const h2 = document.querySelector('h2');
 
 //btn
-const btn = document.querySelectorAll('.btn');
+const btn = document.querySelector('.content-pick .btn');
 
 //h1
 const h1 = document.querySelector('h1');
@@ -65,3 +65,10 @@ window.addEventListener('resize', () => {
 window.addEventListener('scroll', () => {
   console.log('window scroll');
 });
+
+//select
+function logSelection(event) {
+  const selection = event.target;
+  console.log(`You selected: ${selection}`);
+}
+btn.addEventListener('select', logSelection);
